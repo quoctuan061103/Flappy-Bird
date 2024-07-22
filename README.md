@@ -1,1 +1,1 @@
-# Flappy-Bird
+A simple C++ game with SDL

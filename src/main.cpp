@@ -1,5 +1,4 @@
 #include "Game.h"
-#include "Game.cpp"
 
 Game *myGame = new Game();
 
@@ -9,7 +8,9 @@ int main(int argc, char *argv[])
 
     while (myGame->getGameState())
     {
+        myGame->Render();
         myGame->Event();
+        myGame->Update();
     }
 
     myGame->Close();
