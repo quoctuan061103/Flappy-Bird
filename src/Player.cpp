@@ -7,6 +7,14 @@ void Player::Update()
     setSrc(animationFrame / 12 * 19, 0, 19, 16);
 }
 
+void Player::setNewPlayer()
+{
+    Ypos = screenHEIGHT / 2;
+    accelerator = 0;
+    gravity = 0.2;
+    jumpHeight = -6;
+}
+
 void Player::Gravity()
 {
     accelerator += 0.05;
@@ -24,7 +32,7 @@ void Player::Gravity()
     {
         Ypos += (accelerator + gravity);
     }
-    // Ypos = min((int)Ypos, screenHEIGHT);
+    Ypos = min((int)Ypos, groundYpos - 50);
     setDest(screenWIDTH / 2, Ypos, 50, 50);
 }
 
