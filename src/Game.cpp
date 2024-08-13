@@ -26,16 +26,18 @@ Game::Game()
         botPipe[i].initPipeHeight(i);
     }
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 5; i++)
     {
         buttons[i].setSrc(0, 0, 49, 21);
     }
-    buttons[3].setSrc(0, 0, 10, 15);
-    buttons[3].setDest(10, 580, 40, 60);
+    buttons[HOWTOPLAY].setSrc(0, 0, 10, 15);
 
+    buttons[HOWTOPLAY].setDest(10, 580, 40, 60);
     buttons[PLAY].setDest(160, 200, 170, 80);
     buttons[OPTIONS].setDest(160, 300, 170, 80);
     buttons[EXIT].setDest(160, 400, 170, 80);
+    buttons[REPLAY].setDest(80, 500, 170, 80);
+    buttons[BACK].setDest(265, 500, 170, 80);
 }
 
 void Game::Init()
@@ -77,6 +79,8 @@ void Game::Init()
                 buttons[PLAY].CreateTexture("image/playButtonUI.png", renderer);
                 buttons[OPTIONS].CreateTexture("image/optionsButtonUI.png", renderer);
                 buttons[EXIT].CreateTexture("image/exitButtonUI.png", renderer);
+                buttons[REPLAY].CreateTexture("image/replayButtonUI.png", renderer);
+                buttons[BACK].CreateTexture("image/backButtonUI.png", renderer);
                 buttons[HOWTOPLAY].CreateTexture("image/HowToPlayButtonUI.png", renderer);
             }
             else
@@ -124,18 +128,18 @@ void Game::Update()
     gr1.Update(isPlaying & ~isDead);
     gr2.Update(isPlaying & ~isDead);
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 6; i++)
     {
         if (insideButton(buttons[i]))
         {
-            if (i < 3)
+            if (i < 5)
                 buttons[i].setSrc(49, 0, 49, 21);
             else
                 buttons[i].setSrc(10, 0, 10, 15);
         }
         else
         {
-            if (i < 3)
+            if (i < 5)
                 buttons[i].setSrc(0, 0, 49, 21);
             else
                 buttons[i].setSrc(0, 0, 10, 15);
@@ -219,6 +223,17 @@ void Game::Event()
                 showPrompt = 1;
             }
         }
+        else
+        {
+            if (insideButton(buttons[REPLAY]))
+            {
+                newGame();
+            }
+            else if (insideButton(buttons[BACK]))
+            {
+                isPlaying = 0;
+            }
+        }
     }
     if (event.type == SDL_KEYDOWN)
     {
@@ -254,8 +269,9 @@ void Game::Render()
         }
         else
         {
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 3; i++)
                 buttons[i].Render(renderer);
+            buttons[HOWTOPLAY].Render(renderer);
         }
     }
     else
@@ -280,6 +296,8 @@ void Game::Render()
 
             Highscore.Render(renderer);
             HighscoreText.Render(renderer);
+            buttons[REPLAY].Render(renderer);
+            buttons[BACK].Render(renderer);
         }
         else
         {
