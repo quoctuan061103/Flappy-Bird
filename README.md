@@ -57,7 +57,7 @@ Link: https://github.com/libsdl-org/SDL/releases/tag/release-2.30.6
 
 - **Nhân vật chính**:
   - Flappy Bird  
-    ![Ingame](image\bird0.png)
+    <img src="image/bird0.png">
   - Skin  
     ![Ingame](image\birds_pink.png)
 - **Vật cản**:
