@@ -13,7 +13,7 @@ Flappy Bird là một trò chơi điện tử đơn giản nhưng vô cùng gây
 
 ## Demo Video
 
-Xem video demo tại (https://drive.google.com/file/d/1dd3hAN5UquI40f-kcqc85IwwC_uNzSvl/view?usp=sharing).
+Xem video demo tại (https://drive.google.com/file/d/1B4rjzXS3bSLYNYB-aNMpaAvSWcaTJb4L/view?usp=sharing).
 
 ## Cách cài đặt game
 
@@ -75,4 +75,29 @@ Link: https://github.com/libsdl-org/SDL/releases/tag/release-2.30.6
 - **Cách thức điều khiển**: Sử dụng phím `SPACE`
 - **Âm thanh**: Âm thanh mô phỏng các hành động của chú chim.
 - **Chức năng khác**: Chơi lại, đổi nhân vật, lưu điểm cao, v.v.
+
+## Một số hình ảnh trong game
+<img src="game demo/0fee1b4d-4907-49f8-8cd3-19312bbe55c4.jpg" width="300" height="300">  <img src="game demo/2ec0cba6-7c27-491c-aa82-01d3e1d1fd9e.jpg" width="300" height="300">  <img src="game demo/419fa7b8-5997-4de5-9405-d3d766e8c3e6.jpg" width="300" height="300">  <img src="game demo/8f939768-81ab-47a0-b3ed-15f46ec72884.jpg"  width="300" height="300">  <img src="game demo/d11b2f53-bb9d-4902-875f-f491c77fe778.jpg"  width="300" height="300">  <img src="game demo/d7897c47-36b8-4299-b1f0-66bdce55ae97.jpg"  width="300" height="300">
+
+## Các nguồn tham khảo 
+
+* [Lazy Foo's Productions](https://lazyfoo.net/tutorials/SDL/index.php) for SDL2 tutorial
+* [Askari Hassan](https://www.youtube.com/@askarihassan2632) for "How to make Flappy Bird" tutorial 
+* [Duc Le](https://github.com/DuCLeK65t) for public Flappy Bird-like's assets
+
+## Các kỹ thuật được sử dụng
+
+- Thư viện **SDL2** (hình ảnh, âm thanh, font chữ).
+- Xử lý thời gian thực, thao tác chuột, âm thanh, hình ảnh và bàn phím.
+- Lưu và ghi điểm cao qua file.
+- Tính toán vật lý để mô phỏng độ rơi và góc nghiêng của con chim.
+- Áp dụng kế thừa và đa hình trong lập trình hướng đối tượng.
+- Quản lý nhiều đối tượng như con chim, background, menu, v.v.
+
+### Những cải thiện mong muốn cho các phiên bản kế tiếp
+
+- Thêm chế độ chơi dễ hoặc khó
+- Kết nối với các nền tảng như Facebook hay X để chia sẻ với mọi người
+- Có thêm đa dạng và nhiều mẫu skin hơn
+- Chế độ kết nối mạng để có thể thi đấu với nhau
 
