@@ -32,3 +32,47 @@ Link: https://github.com/libsdl-org/SDL/releases/tag/release-2.30.6
      - Truy cập trang GitHub của dự án: (https://github.com/quoctuan061103/Flappy-Bird.git).
      - Chọn nút `Code` -> `Download Zip` và giải nén.
 
+## Cách chơi game
+
+1. **Khởi động trò chơi**:
+   - Ở màn hình lúc vừa khởi động, nhấn `PLAY` để bắt đầu chơi
+
+2. **Điều khiển**:
+   - Mỗi lần nhấn phím `SPACE` chú chim sẽ bay lên một đoạn ngắn.
+   - Nếu không nhấn, chú chim sẽ rơi xuống do trọng lực.
+
+3. **Mục tiêu**:
+   - Điều khiển chú chim bay qua các khoảng trống giữa các cột ống và tránh va chạm với chúng.
+   - Mỗi cột ống vượt qua thành công sẽ mang về 1 điểm.
+
+4. **Trò chơi kết thúc**:
+   - Trò chơi kết thúc nếu chú chim va chạm vào cột ống hoặc rơi xuống đất.
+   - Sau khi trò chơi kết thúc, số điểm đạt được và số điểm cao nhất đã từng chơi sẽ được hiển thị.
+   - Người chơi có thể chơi lại để cải thiện số điểm.
+
+5. **Tính năng thêm**:
+   - Có thể tùy chọn skin cho chú chim của mình
+
+## Các thành phần trong game
+
+- **Nhân vật chính**:
+  - Flappy Bird  
+    ![Ingame](image\bird0.png)
+  - Skin  
+    ![Ingame](image\birds_pink.png)
+- **Vật cản**:
+  - Ống nước trên  
+    ![Ingame](image\topPipe.png)
+  - Ống nước dưới  
+  ![Ingame](image\botPipe.png)
+- **Background**:
+  - Nền  
+  ![Ingame](image\bgDay.png)
+  - Mặt đất  
+  ![Ingame](image\ground.png) 
+- **Bảng điểm**:
+  ![Ingame](image\highscore.png)
+- **Cách thức điều khiển**: Sử dụng phím `SPACE`
+- **Âm thanh**: Âm thanh mô phỏng các hành động của chú chim.
+- **Chức năng khác**: Chơi lại, đổi nhân vật, lưu điểm cao, v.v.
+
