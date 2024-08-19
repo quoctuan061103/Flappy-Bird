@@ -57,21 +57,21 @@ Link: https://github.com/libsdl-org/SDL/releases/tag/release-2.30.6
 
 - **Nhân vật chính**:
   - Flappy Bird  
-    <img src="image/bird0.png">
+    <img src="image/bird0.png" width="50" height="50">
   - Skin  
-    ![Ingame](image\birds_pink.png)
+    <img src="image/birds_pink.png" width="50" height="50">
 - **Vật cản**:
   - Ống nước trên  
-    ![Ingame](image\topPipe.png)
+    <img src="image/topPipe.png" width="50" height="50">
   - Ống nước dưới  
-  ![Ingame](image\botPipe.png)
+    <img src="image/botPipe.png" width="50" height="50">
 - **Background**:
   - Nền  
-  ![Ingame](image\bgDay.png)
+     <img src="image/bgDay.png" width="200" height="400">
   - Mặt đất  
-  ![Ingame](image\ground.png) 
+     <img src="image/ground.png" width="150" height="50"> 
 - **Bảng điểm**:
-  ![Ingame](image\highscore.png)
+     <img src="image/highscore.png" width="200" height="300">
 - **Cách thức điều khiển**: Sử dụng phím `SPACE`
 - **Âm thanh**: Âm thanh mô phỏng các hành động của chú chim.
 - **Chức năng khác**: Chơi lại, đổi nhân vật, lưu điểm cao, v.v.
